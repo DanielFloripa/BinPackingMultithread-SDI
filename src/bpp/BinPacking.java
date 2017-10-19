@@ -6,7 +6,8 @@ import java.util.List;
 public class BinPacking {
 
     public static void main(String[] args) {
-        List<Integer> in = Arrays.asList(1, 1, 2, 3, 7, 8, 7, 10, 1, 1, 2, 3, 4);
+                List<Integer> in = Arrays.asList(1, 1, 2, 3, 7, 8, 9, 10, 1, 9);
+        System.out.println("Array: "+in.toString());
 
         BinPackingBruteforce bf = new BinPackingBruteforce(in, 10);
         testBinPacking(bf, "brute force");
