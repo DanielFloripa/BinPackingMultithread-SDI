@@ -1,0 +1,22 @@
+
+For input example (9, 3, 2, 3, 10, 1, 6, 7, 8, 1), the result must be:
+
+needed bins (brute force): 5
+Bins:
+9 1     Size: 10 (max: 10)
+3 6 1     Size: 10 (max: 10)
+2 8     Size: 10 (max: 10)
+3 7     Size: 10 (max: 10)
+10     Size: 10 (max: 10)
+in 65468 ms
+
+
+
+needed bins (first fit decreasing): 5
+Bins:
+10     Size: 10 (max: 10)
+9 1     Size: 10 (max: 10)
+8 2     Size: 10 (max: 10)
+7 3     Size: 10 (max: 10)
+6 3 1     Size: 10 (max: 10)
+in 1 ms
