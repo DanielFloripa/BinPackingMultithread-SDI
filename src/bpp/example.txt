@@ -1,6 +1,8 @@
+For the input examples below, the results should be approximately:
+------------------------------------------------------------------------
+1)----------------------------------------------------------------------
 
-For input example (9, 3, 2, 3, 10, 1, 6, 7, 8, 1), the result must be:
-
+Array: [9, 3, 2, 3, 10, 1, 6, 7, 8, 1]
 needed bins (brute force): 5
 Bins:
 9 1     Size: 10 (max: 10)
@@ -10,8 +12,6 @@ Bins:
 10     Size: 10 (max: 10)
 in 65468 ms
 
-
-
 needed bins (first fit decreasing): 5
 Bins:
 10     Size: 10 (max: 10)
@@ -19,4 +19,53 @@ Bins:
 8 2     Size: 10 (max: 10)
 7 3     Size: 10 (max: 10)
 6 3 1     Size: 10 (max: 10)
+in 1 ms
+
+------------------------------------------------------------------------
+2)----------------------------------------------------------------------
+
+Array: [7, 5, 6, 4, 10, 5, 3, 9, 7, 8]
+needed bins (brute force): 7
+Bins:
+7 3     Size: 10 (max: 10)
+5 5     Size: 10 (max: 10)
+6 4     Size: 10 (max: 10)
+10     Size: 10 (max: 10)
+9     Size: 9 (max: 10)
+7     Size: 7 (max: 10)
+8     Size: 8 (max: 10)
+in 4655 ms
+
+needed bins (first fit decreasing): 7
+Bins:
+10     Size: 10 (max: 10)
+9     Size: 9 (max: 10)
+8     Size: 8 (max: 10)
+7 3     Size: 10 (max: 10)
+7     Size: 7 (max: 10)
+6 4     Size: 10 (max: 10)
+5 5     Size: 10 (max: 10)
+in 1 ms
+
+------------------------------------------------------------------------
+3)----------------------------------------------------------------------
+Array: [1, 1, 2, 3, 7, 8, 9, 10, 1, 9]
+needed bins (brute force): 6
+Bins:
+1 1 2 3 1     Size: 8 (max: 10)
+7     Size: 7 (max: 10)
+8     Size: 8 (max: 10)
+9     Size: 9 (max: 10)
+10     Size: 10 (max: 10)
+9     Size: 9 (max: 10)
+in 43562 ms
+
+needed bins (first fit decreasing): 6
+Bins:
+10     Size: 10 (max: 10)
+9 1     Size: 10 (max: 10)
+9 1     Size: 10 (max: 10)
+8 2     Size: 10 (max: 10)
+7 3     Size: 10 (max: 10)
+1     Size: 1 (max: 10)
 in 1 ms

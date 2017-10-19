@@ -30,6 +30,7 @@ public abstract class AbstractBinPacking {
         for (int i = 0; i < bins.size(); i++) {
             copy.add(bins.get(i).deepCopy());
         }
+        //System.out.println("Copy_A:"+copy.toString());
         return copy;
     }
 }

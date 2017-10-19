@@ -55,6 +55,7 @@ public class BinPackingBruteforce extends AbstractBinPacking {
         for (Bin bin : bins) {
             if (bin.put(currentItem)) {
                 bruteforce(in, currentPosition + 1);
+                //System.out.println ("ci: "+currentItem+", bin "+bin.toString());
                 bin.remove(currentItem);
             } // else: item did not fit in bin, ignore
         }

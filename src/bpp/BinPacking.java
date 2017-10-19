@@ -6,7 +6,8 @@ import java.util.List;
 public class BinPacking {
 
     public static void main(String[] args) {
-                List<Integer> in = Arrays.asList(1, 1, 2, 3, 7, 8, 9, 10, 1, 9);
+        /*Modificar para ler de um arquivo*/
+        List<Integer> in = Arrays.asList(7, 5, 6, 4, 10, 5, 3, 9, 7, 8);
         System.out.println("Array: "+in.toString());
 
         BinPackingBruteforce bf = new BinPackingBruteforce(in, 10);

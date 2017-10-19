@@ -84,6 +84,7 @@ public class Bin {
         copy.items = new ArrayList<Integer>(items); // Integers are not copied by reference
         copy.currentSize = currentSize;
         copy.maxSize = maxSize;
+        //System.out.println("Copy_B:"+copy.toString());
         return copy;
     }
 

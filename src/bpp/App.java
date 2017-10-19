@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class App {
 
-	public static void main2(String[] args) {
+	public static void main(String[] args) {
 		System.out.println("Starting...");
 		Thread t1 =new Thread(new Runnable() {
 			
